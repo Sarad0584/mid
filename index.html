@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Flask & JavaScript Demo</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="greetButton">Send to Python Server</button>
+        <p id="responseMessage" class="message"></p>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
